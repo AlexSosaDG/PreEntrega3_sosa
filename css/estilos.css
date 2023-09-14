@@ -1,436 +1,458 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,400;1,700&family=Tenor+Sans&display=swap');
-
-*{
-    padding: 0;
-    border: 0;
-    margin: 0;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,400;1,700&family=Tenor+Sans&display=swap");
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
-h1{
-    font-family: 'Tenor Sans', sans-serif;
+.links_redes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin-top: 15px;
 }
-h2, h3, h4, h5, h6, p{
-    font-family: 'Archivo Narrow', sans-serif;
-}
-
-ul{
-    list-style-type: none;
-}
-footer{display: flex;
-    justify-content: space-around;
-    background-color:#1282A2;
-    padding: 1em;
+.links_redes li img {
+  height: 30px;
 }
 
-.link_footer{
-    padding-left: 0!important;
-}
-.link_footer a{
-    font-family: 'Archivo Narrow', sans-serif;
-    text-decoration: none;
-    color: #edfdef;
+.color_boton {
+  background-color: aliceblue;
+  justify-content: end;
 }
 
-#logo_footer{
-    height: 120px;
-
+.botones-nav {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-
-.links_redes{
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-    margin-top: 15px;
+.w-25 {
+  width: 40px !important;
 }
 
-.links_redes li img{
-    height: 30px;
+.navbar-brand {
+  margin-right: 0 !important;
 }
 
-/* first mobile */
-
-.color_boton{
-    background-color: aliceblue;
-    text-align: end;
+.centrado-boton {
+  text-align: center;
 }
 
-
-
-.botones-nav{
-    width: 100% !important;
-    padding: 0!important;
-    margin: 0!important;
+.navbar {
+  padding: 5px 10px !important;
 }
 
-.w-25{
-    width: 40px!important;
-}
-.navbar-brand{
-    margin-right:0!important;
+.nav-item {
+  margin: auto;
 }
 
-.centrado-boton{
-    text-align: center;
-}
-
-.navbar{
-    padding: 5px 10px!important;
-}
-.nav-item{
-    margin: auto;
-}
-.nav-link{
-    padding: 10px;
-}
-
-/*texto principal*/
-
-.texto_principal{
-   padding: 20px;
-}
-.texto_principal h1, .texto_principal h2{
-    text-align: center;
-}
-.cuadro_principal{
-    display: block;
-    width: 350px;
-    margin: auto;
-    border-radius: 30px 30px 0 0;
-}
-
-.cuadros ul{
-    margin-top: 20px;
-}
-.cuadros ul li h3{
-    text-align: center;
-    margin: auto;
-}
-
-/*destacados*/
-.c_destacados{
-    background-color: aquamarine;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 20px;
-}
-.c_destacados h2{
-    color: #1282A2;
-    padding-top: 10px;
-}
-
-.uno, .dos, .tres{
-    width: 60%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: aliceblue;
-}
-
-.boton_u{
-    text-decoration: none;
-    background-color: #1282A2;
-    color: #edfdef;
-    border-radius: 10%;
-    padding: 8px;
-    margin-top: 1000px;
-}
-.from_bc{
-    padding-top: 20px;
-    background-color: #edfdef;
-    margin: auto;
-}
-.from_bc h1{
-    color: #1282A2;
-    text-align: center;
-}
-.formulario{
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: small;
-    color: #1282A2;
-    margin-left: 30%;
-    padding-bottom: 20px;
-}
-
-.mensaje{
-    padding: 5px 0 0 10px;
-    border-radius: 10px;
-}
-
-.boton_enviar{
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: small;
-    padding: 5px;
-    border-radius: 7px;
-    color: #00a878;
-}
-/*----------------------------------------- novedades.html desde acá ----------------------------*/
-.publicacion, .agenda_orden{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #e5fcf5;
-}
-.publicacion img{ display: block;
-    width: 70%;
-    border-radius: 30px 30px 0 0;
-    margin: auto;
-}
-.publicacion h1, .publicacion h4{
-    text-align: center;
-}
-.publicacion p{
-    width: 70%;
-    margin: auto;
-}
-.agenda_orden ul li{
-    background-color: #ffffff;
-    width: 100%;
-}
-.agenda_orden h3{
-    color: #00a878;
-    text-align: center;
-    background-color: #69c4dd17;
-    padding: 5px;
-    margin-bottom: 15px;
-}
-.grid_agenda {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr ; 
-    gap: 20px 20px; 
-    grid-template-areas: 
-      "fecha_uno fecha_dos"
-      "fecha_tres fecha_cuatro"
-      "fecha_cinco fecha_Seis"
-      "fecha_siete fecha_ocho"; 
-     padding-right: 20px;
-  }
-
-.agenda_orden ul li p{ 
-    margin-bottom: 0;
-}
-.fecha_uno, .fecha_dos, .fecha_tres, .fecha_cuatro, .fecha_cinco, .fecha_seis, .fecha_siete, .fecha_ocho{
-    padding: 15px;
-    color: #1282A2;
-}
-.agenda_orden ul li h4{
-    text-align: center;
-    background-color: #1282A2;
-    color: #ffffff;
-    border-radius: 10px;
-}
-/*----------------------------------------- galeria.html desde acá ----------------------------*/
-.main_galeria{
-    background-color: #1283a23d;
-}
-.galeria_cuadros{
-    padding: 0;
-    margin: auto;
-}
-.galeria_cuadros li{
-    text-align: center;
-}
-.galeria_cuadros li img{
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #1282A2;
-    border-radius: 20px;
-}
-.main_galeria{
-    padding-top: 20px;
-}
-.main_galeria h1, .main_galeria p{
-    text-align: center;
-}
-
-/*----------------------------------------- historia.html desde acá ----------------------------*/
-.historia{
-    background-color: #edfdef;
-    padding-bottom: 20px;
-}
-.inicio_presente{
-    color: #1282A2;  
-    margin-bottom: 0;
-    padding-left: 0;
-    margin: auto;
-    width: 310px;
-}
-.inicio_presente li{
-    padding-top: 20px;
-    border-radius:  30px 30px 0 0;
-    width: auto;
-}
-.inicio_presente p{
-    margin-bottom: 5px;
-    text-align: end;
-    padding: 0px 15px 5px 0;
-    background-color: #ffffff;
-}
-.inicio_presente li h5{
-    margin-bottom: 0px;
-    text-align: end;
-    padding: 5px 15px 0px 0;
-    background-color: #ffffff;
-}
-.inicio_presente img{
-    width: 310px;
-    border: #00a878 solid 10px;
-    background-color: #00a878;
-    border-radius:  30px 30px 0 0;
-}
-
-@media (min-width: 650px) {
-    .botones-nav{
-        justify-content: start!important;
-    }
-    .cuadros p{
-        width: 80%;
-        margin: auto;
-    }
-    .cuadros a, .detalle_cuadro{
-        padding-left: 10%;
-    }
-    
-    .flex_destacados{
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-        width: 100%;
-        justify-content: space-evenly;
-      }
-
-    .flex_a{
-        width: 75%;
-    }
-    .uno{
-        width: 100%;
-    }
-    .flex_b{
-        width: 43%;
-    }
-    .dos, .tres{
-        width: 100%;
-    }
-
-    /*-------------------novedades----------*/
-    .grid_agenda { 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        gap: 20px 20px; 
-        grid-template-areas: 
-          "fecha_uno fecha_dos fecha_tres"
-          "fecha_cuatro fecha_cinco fecha_Seis"
-          "fecha_siete fecha_ocho "; 
-      }
-    
-      /*-------------------galedria----------*/
-
-      .galeria_cuadros{
-        width: 90%;
-        columns: 3 200px;
-        column-gap: 20px;
-        padding-bottom: 20px;
-      }
-      .galeria_cuadros li{
-        width: 90%;
-        margin-bottom: 5px;
-        margin-left: auto;
-      }
-      .galeria_cuadros li img{
-       width: 100%;
-      }
-
-      /*-------------------historia------------*/
-
-      .cuadros img{
-        width: 50%;
-      }
-    
+.nav-link {
+  padding: 10px;
 }
 
 @media (min-width: 992px) {
-        /*hover, animaciones de botones generales*/
-    .hover_boton :hover{
-        transform: scale(1.5, 1.5);
-        transition-duration: 0.3s;
-        }
-    .hover_boton_menu :hover{
-        color:#093528!important;
-        }
-    .hover_boton_u :hover{
-        background-color: #093528;
-    }
-         /*-------fin hover, animaciones de botones generales*/
-    .cuadros{
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        margin-top: 40px;
-    }
-    
-    .cuadros ul :not(.detalle_cuadro){
-       width: 400px;
-    }
-    .cuadros ul li h3{
-        text-align: left;
-    }
-    .detalle_cuadro{
-        padding-left: 0;
-    }
-    .cuadros img{
-       width: 300px;
-       margin: 0;
-    }
-    .flex_destacados{
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .flex_a, .flex_b{
-        width: 300px; 
-        margin: 0;
-    }
-    .b{
-        order: -1;
-    }
-
-    .publicacion img{
-        width: 450px;
-    }
-
-    .grid_agenda { 
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 10px 10px; 
-        grid-template-areas: 
-          "fecha_uno fecha_dos fecha_tres fecha_cuatro"
-          "fecha_cinco fecha_Seis fecha_siete fecha_ocho "; 
-      }
-      .galeria_cuadros{
-        width: 90%;
-        columns: 5 180px;
-        column-gap: 20px;
-        padding-bottom: 20px;
-      }
-      .cuadros img{
-        width: 300px;
-      }
-      .inicio_presente{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: end;
-        margin: 0;
-        width: auto;
-      }
-      .formulario{
-        margin-left: 200px;
-      }
-      .from_bc h1{
-        text-align: left;
-        margin-left: 200px;
-      }
+  /*botones de redes alineados a la izquierda*/
+  .botones-nav {
+    justify-content: start !important;
+  }
+  /*hover, animaciones de botones generales*/
+  .links_redes li :hover {
+    transform: scale(1.5, 1.5);
+    transition-duration: 0.3s;
+  }
+  .hover_boton_menu :hover {
+    color: #093528 !important;
+  }
+  .hover_boton_u :hover {
+    background-color: #093528;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1282A2;
+  padding: 1em;
+}
+footer ul {
+  padding-left: 0 !important;
+}
+footer ul a {
+  font-family: "Archivo Narrow", sans-serif;
+  text-decoration: none;
+  color: #edfdef;
+}
+footer img {
+  height: 120px;
 }
 
- 
+/*texto principal*/
+.texto_principal {
+  padding: 20px;
+}
+.texto_principal h1 {
+  text-align: center;
+}
+.texto_principal h2 {
+  text-align: center;
+}
+
+.cuadros img {
+  display: block;
+  width: 350px;
+  margin: auto;
+  border-radius: 30px 30px 0 0;
+}
+.cuadros ul {
+  margin-top: 20px;
+}
+.cuadros ul h3 {
+  text-align: center;
+  margin: auto;
+}
+
+/*destacados*/
+.c_destacados {
+  background-color: aquamarine;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.c_destacados h2 {
+  color: #1282A2;
+  padding-top: 10px;
+}
+
+.uno,
+.dos,
+.tres {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+.boton_u {
+  text-decoration: none;
+  background-color: #1282A2;
+  color: #edfdef;
+  border-radius: 10%;
+  padding: 8px;
+  margin-top: 1000px;
+}
+
+@media (min-width: 650px) {
+  .cuadros p {
+    width: 80%;
+    margin: auto;
+  }
+  .cuadros a {
+    padding-left: 10%;
+  }
+  .detalle_cuadro {
+    padding-left: 10%;
+  }
+  .flex_destacados {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .flex_a {
+    width: 75%;
+  }
+  .uno {
+    width: 100%;
+  }
+  .flex_b {
+    width: 43%;
+  }
+  .dos,
+  .tres {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .cuadros {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 40px;
+  }
+  .cuadros ul :not(.detalle_cuadro) {
+    width: 400px;
+  }
+  .cuadros ul h3 {
+    text-align: left;
+  }
+  .cuadros img {
+    width: 300px;
+    margin: 0;
+  }
+  .detalle_cuadro {
+    padding-left: 0;
+  }
+  .flex_destacados {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .flex_a, .flex_b {
+    width: 300px;
+    margin: 0;
+  }
+  .b {
+    order: -1;
+  }
+}
+h1 {
+  font-family: "Tenor Sans", sans-serif;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.from_bc {
+  padding-top: 20px;
+  background-color: #edfdef;
+  margin: auto;
+}
+
+.from_bc h1 {
+  color: #1282A2;
+  text-align: center;
+}
+
+.formulario {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: small;
+  color: #1282A2;
+  margin-left: 30%;
+  padding-bottom: 20px;
+}
+
+.mensaje {
+  padding: 5px 0 0 10px;
+  border-radius: 10px;
+}
+
+.boton_enviar {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: small;
+  padding: 5px;
+  border-radius: 7px;
+  color: #00a878;
+}
+
+/*----------------------------------------- novedades.html desde acá ----------------------------*/
+.publicacion,
+.agenda_orden {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #e5fcf5;
+}
+
+.publicacion img {
+  display: block;
+  width: 70%;
+  border-radius: 30px 30px 0 0;
+  margin: auto;
+}
+
+.publicacion h1,
+.publicacion h4 {
+  text-align: center;
+}
+
+.publicacion p {
+  width: 70%;
+  margin: auto;
+}
+
+.agenda_orden ul li {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.agenda_orden h3 {
+  color: #00a878;
+  text-align: center;
+  background-color: rgba(105, 196, 221, 0.0901960784);
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.grid_agenda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: "fecha_uno fecha_dos" "fecha_tres fecha_cuatro" "fecha_cinco fecha_Seis" "fecha_siete fecha_ocho";
+  padding-right: 20px;
+}
+
+.agenda_orden ul li p {
+  margin-bottom: 0;
+}
+
+.fecha_uno,
+.fecha_dos,
+.fecha_tres,
+.fecha_cuatro,
+.fecha_cinco,
+.fecha_seis,
+.fecha_siete,
+.fecha_ocho {
+  padding: 15px;
+  color: #1282A2;
+}
+
+.agenda_orden ul li h4 {
+  text-align: center;
+  background-color: #1282A2;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+/*----------------------------------------- galeria.html desde acá ----------------------------*/
+.main_galeria {
+  background-color: rgba(18, 131, 162, 0.2392156863);
+}
+
+.galeria_cuadros {
+  padding: 0;
+  margin: auto;
+}
+
+.galeria_cuadros li {
+  text-align: center;
+}
+
+.galeria_cuadros li img {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #1282A2;
+  border-radius: 20px;
+}
+
+.main_galeria {
+  padding-top: 20px;
+}
+
+.main_galeria h1,
+.main_galeria p {
+  text-align: center;
+}
+
+/*----------------------------------------- historia.html desde acá ----------------------------*/
+.historia {
+  background-color: #edfdef;
+  padding-bottom: 20px;
+}
+
+.inicio_presente {
+  color: #1282A2;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin: auto;
+  width: 310px;
+}
+
+.inicio_presente li {
+  padding-top: 20px;
+  border-radius: 30px 30px 0 0;
+  width: auto;
+}
+
+.inicio_presente p {
+  margin-bottom: 5px;
+  text-align: end;
+  padding: 0px 15px 5px 0;
+  background-color: #ffffff;
+}
+
+.inicio_presente li h5 {
+  margin-bottom: 0px;
+  text-align: end;
+  padding: 5px 15px 0px 0;
+  background-color: #ffffff;
+}
+
+.inicio_presente img {
+  width: 310px;
+  border: #00a878 solid 10px;
+  background-color: #00a878;
+  border-radius: 30px 30px 0 0;
+}
+
+@media (min-width: 650px) {
+  /*-------------------novedades----------*/
+  .grid_agenda {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: "fecha_uno fecha_dos fecha_tres" "fecha_cuatro fecha_cinco fecha_Seis" "fecha_siete fecha_ocho ";
+  }
+  /*-------------------galedria----------*/
+  .galeria_cuadros {
+    width: 90%;
+    columns: 3 200px;
+    column-gap: 20px;
+    padding-bottom: 20px;
+  }
+  .galeria_cuadros li {
+    width: 90%;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+  .galeria_cuadros li img {
+    width: 100%;
+  }
+  /*-------------------historia------------*/
+  .cuadros img {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .publicacion img {
+    width: 450px;
+  }
+  .grid_agenda {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "fecha_uno fecha_dos fecha_tres fecha_cuatro" "fecha_cinco fecha_Seis fecha_siete fecha_ocho ";
+  }
+  .galeria_cuadros {
+    width: 90%;
+    columns: 5 180px;
+    column-gap: 20px;
+    padding-bottom: 20px;
+  }
+  .cuadros img {
+    width: 300px;
+  }
+  .inicio_presente {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    margin: 0;
+    width: auto;
+  }
+  .formulario {
+    margin-left: 200px;
+  }
+  .from_bc h1 {
+    text-align: left;
+    margin-left: 200px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

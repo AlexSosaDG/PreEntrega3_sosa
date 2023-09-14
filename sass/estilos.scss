@@ -1,0 +1,276 @@
+@import './assets/tipograpy';
+@import './assets/reset';
+@import './sections/header';
+@import './sections/footer';
+@import './sections/inicio';
+
+h1{
+    font-family: 'Tenor Sans', sans-serif;
+}
+h2, h3, h4, h5, h6, p{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+.from_bc {
+    padding-top: 20px;
+    background-color: #edfdef;
+    margin: auto;
+}
+
+.from_bc h1 {
+    color: #1282A2;
+    text-align: center;
+}
+
+.formulario {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: small;
+    color: #1282A2;
+    margin-left: 30%;
+    padding-bottom: 20px;
+}
+
+.mensaje {
+    padding: 5px 0 0 10px;
+    border-radius: 10px;
+}
+
+.boton_enviar {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: small;
+    padding: 5px;
+    border-radius: 7px;
+    color: #00a878;
+}
+
+/*----------------------------------------- novedades.html desde acá ----------------------------*/
+.publicacion,
+.agenda_orden {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e5fcf5;
+}
+
+.publicacion img {
+    display: block;
+    width: 70%;
+    border-radius: 30px 30px 0 0;
+    margin: auto;
+}
+
+.publicacion h1,
+.publicacion h4 {
+    text-align: center;
+}
+
+.publicacion p {
+    width: 70%;
+    margin: auto;
+}
+
+.agenda_orden ul li {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.agenda_orden h3 {
+    color: #00a878;
+    text-align: center;
+    background-color: #69c4dd17;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.grid_agenda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+        "fecha_uno fecha_dos"
+        "fecha_tres fecha_cuatro"
+        "fecha_cinco fecha_Seis"
+        "fecha_siete fecha_ocho";
+    padding-right: 20px;
+}
+
+.agenda_orden ul li p {
+    margin-bottom: 0;
+}
+
+.fecha_uno,
+.fecha_dos,
+.fecha_tres,
+.fecha_cuatro,
+.fecha_cinco,
+.fecha_seis,
+.fecha_siete,
+.fecha_ocho {
+    padding: 15px;
+    color: #1282A2;
+}
+
+.agenda_orden ul li h4 {
+    text-align: center;
+    background-color: #1282A2;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/*----------------------------------------- galeria.html desde acá ----------------------------*/
+.main_galeria {
+    background-color: #1283a23d;
+}
+
+.galeria_cuadros {
+    padding: 0;
+    margin: auto;
+}
+
+.galeria_cuadros li {
+    text-align: center;
+}
+
+.galeria_cuadros li img {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1282A2;
+    border-radius: 20px;
+}
+
+.main_galeria {
+    padding-top: 20px;
+}
+
+.main_galeria h1,
+.main_galeria p {
+    text-align: center;
+}
+
+/*----------------------------------------- historia.html desde acá ----------------------------*/
+.historia {
+    background-color: #edfdef;
+    padding-bottom: 20px;
+}
+
+.inicio_presente {
+    color: #1282A2;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin: auto;
+    width: 310px;
+}
+
+.inicio_presente li {
+    padding-top: 20px;
+    border-radius: 30px 30px 0 0;
+    width: auto;
+}
+
+.inicio_presente p {
+    margin-bottom: 5px;
+    text-align: end;
+    padding: 0px 15px 5px 0;
+    background-color: #ffffff;
+}
+
+.inicio_presente li h5 {
+    margin-bottom: 0px;
+    text-align: end;
+    padding: 5px 15px 0px 0;
+    background-color: #ffffff;
+}
+
+.inicio_presente img {
+    width: 310px;
+    border: #00a878 solid 10px;
+    background-color: #00a878;
+    border-radius: 30px 30px 0 0;
+}
+
+@media (min-width: 650px) {
+
+    /*-------------------novedades----------*/
+    .grid_agenda {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+            "fecha_uno fecha_dos fecha_tres"
+            "fecha_cuatro fecha_cinco fecha_Seis"
+            "fecha_siete fecha_ocho ";
+    }
+
+    /*-------------------galedria----------*/
+
+    .galeria_cuadros {
+        width: 90%;
+        columns: 3 200px;
+        column-gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .galeria_cuadros li {
+        width: 90%;
+        margin-bottom: 5px;
+        margin-left: auto;
+    }
+
+    .galeria_cuadros li img {
+        width: 100%;
+    }
+
+    /*-------------------historia------------*/
+
+    .cuadros img {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .publicacion img {
+        width: 450px;
+    }
+
+    .grid_agenda {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "fecha_uno fecha_dos fecha_tres fecha_cuatro"
+            "fecha_cinco fecha_Seis fecha_siete fecha_ocho ";
+    }
+
+    .galeria_cuadros {
+        width: 90%;
+        columns: 5 180px;
+        column-gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .cuadros img {
+        width: 300px;
+    }
+
+    .inicio_presente {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+        margin: 0;
+        width: auto;
+    }
+
+    .formulario {
+        margin-left: 200px;
+    }
+
+    .from_bc h1 {
+        text-align: left;
+        margin-left: 200px;
+    }
+}
